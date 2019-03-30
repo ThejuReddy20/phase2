@@ -1,0 +1,77 @@
+body{
+  background:black;
+}
+.parent{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #EF9A9A;
+  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  background:black;
+}
+.career,.skills{
+  width: 90%;
+  margin: 2%;
+  padding: 1%;
+  border: 2px solid #EF9A9A;
+  border-radius: 3px;
+  text-align: center;
+  background: #EF9A9A;
+}
+.details{
+  width: 40%;
+  margin: 2%;
+  padding: 1%;
+  border: 2px solid #EF9A9A;
+  border-radius: 3px;
+  background:#EF9A9A;
+}
+input,select{
+  width: 80%;
+  margin:2%;
+}
+button{
+  width: 30%;
+  height:10%;
+  font-style: italic;
+  font-size: 25px;
+  border: 2px solid #EF9A9A;
+  margin: 1%;
+}
+@media screen and (max-width:767px) {
+  .parent{
+    flex-wrap: wrap;
+  }
+  .career,.skills{
+    width: 100%;
+  }
+  .details{
+    width: 100%;
+  }
+  table{
+    width: 100%;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .parent{
+    flex-wrap: wrap;
+  }
+  .career,.skills{
+    width: 48%;
+  }
+  .details{
+    width: 48%;
+  }
+}
+@media screen and (min-width:1024px) and (max-width:1366px){
+.parent{
+  flex-wrap: wrap;
+}
+.career,.skills{
+  width: 90%;
+}
+.details{
+  width:40%;
+}
+}

@@ -1,0 +1,76 @@
+body{
+  color: white;
+}
+table{
+  width:100%;
+}
+table th,td{
+  border: 1px solid grey;
+}
+body{
+  background: black;
+}
+.left{
+  width:30%;
+  border: 2px solid gray;
+  padding:3%;
+  margin: 2%;
+  background: #585858;
+  text-align: center;
+  border-radius: 2%;
+}
+.right {
+  width:60%;
+  margin: 2%;
+  padding: 2%;
+  border: 2px solid gray;
+  background: #585858;
+  text-align: center;
+  border-radius: 2%;
+}
+.parent {
+  background: #FE2E64;
+  display: flex;
+  margin: 2%;
+  border: 2px solid white;
+  border-radius: 3%;
+}
+img{
+  width: 100%;
+}
+@media screen and (max-width:767px) {
+  .parent{
+    flex-wrap: wrap;
+  }
+  .left{
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+  }
+  table{
+    width: 100%;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .parent{
+    flex-wrap: wrap;
+  }
+  .left{
+    width: 48%;
+  }
+  .right{
+    width: 48%;
+  }
+}
+@media screen and (min-width:1024px) and (max-width:1366px){
+.parent{
+  flex-wrap: wrap;
+}
+.left{
+  width: 35%;
+}
+.right{
+  width:35%;
+}
+}
